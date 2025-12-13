@@ -21,8 +21,15 @@ namespace Vier_Gewinnt
         private void RB1_Checked(object sender, RoutedEventArgs e)
         {
             bool rb1 = true;
-            G1.Background = System.Windows.Media.Brushes.Red;
-
+            if (P1.IsChecked == true)
+            {
+                G1.Background = System.Windows.Media.Brushes.Red;
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                G1.Background = System.Windows.Media.Brushes.Green;
+            }
         }
 
         private void RB6_Checked(object sender, RoutedEventArgs e)
@@ -214,6 +221,42 @@ namespace Vier_Gewinnt
                 RB12.IsChecked = false;
                 RB16.IsChecked = false;
             }
+            if (RB1.IsChecked == true && RB6.IsChecked == true && RB11.IsChecked == true && RB16.IsChecked == true)
+            {
+                MessageBox.Show("vier gewinnt");
+                G1.Background = System.Windows.Media.Brushes.Wheat;
+                G6.Background = System.Windows.Media.Brushes.Wheat;
+                G11.Background = System.Windows.Media.Brushes.Wheat;
+                G16.Background = System.Windows.Media.Brushes.Wheat;
+                RB1.IsChecked = false;
+                RB6.IsChecked = false;
+                RB11.IsChecked = false;
+                RB16.IsChecked = false;
+            }
+            if (RB4.IsChecked == true && RB7.IsChecked == true && RB10.IsChecked == true && RB13.IsChecked == true)
+            {
+                MessageBox.Show("vier gewinnt");
+                G4.Background = System.Windows.Media.Brushes.Wheat;
+                G7.Background = System.Windows.Media.Brushes.Wheat;
+                G10.Background = System.Windows.Media.Brushes.Wheat;
+                G13.Background = System.Windows.Media.Brushes.Wheat;
+                RB4.IsChecked = false;
+                RB7.IsChecked = false;
+                RB10.IsChecked = false;
+                RB13.IsChecked = false;
+
+            }
+
+        }
+
+        private void P1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void P2_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

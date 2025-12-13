@@ -66,6 +66,8 @@
             <RadioButton x:Name="RB16" Content="RadioButton" Checked="RB16_Checked"/>
         </Border>
         <Button Content="Zug beenden" HorizontalAlignment="Left" Margin="315,700,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="70" Click="Button_Click" Grid.Column="2"/>
+        <RadioButton x:Name="P1" Grid.Column="2" Content="P1" HorizontalAlignment="Left" Margin="70,715,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="Red" BorderBrush="Red" Background="Red" FontSize="18"/>
+        <RadioButton x:Name="P2" Grid.Column="2" Content="P2" HorizontalAlignment="Left" Margin="603,715,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF4EF452" BorderBrush="#FF4EF452" Foreground="#FF4EF452" FontSize="18" Checked="P2_Checked"/>
 
     </Grid>
 </Window>
