@@ -124,6 +124,10 @@ namespace Vier_Gewinnt
                 G2.Background = System.Windows.Media.Brushes.Wheat;
                 G3.Background = System.Windows.Media.Brushes.Wheat;
                 G4.Background = System.Windows.Media.Brushes.Wheat;
+                RB1.IsChecked = false;
+                RB2.IsChecked = false;
+                RB33.IsChecked = false;
+                RB4.IsChecked = false;
             }
             else if (RB5.IsChecked == true && RB6.IsChecked == true && RB7.IsChecked == true && RB8.IsChecked == true)
             {
@@ -132,6 +136,10 @@ namespace Vier_Gewinnt
                 G6.Background = System.Windows.Media.Brushes.Wheat;
                 G7.Background = System.Windows.Media.Brushes.Wheat;
                 G8.Background = System.Windows.Media.Brushes.Wheat;
+                RB5.IsChecked = false;
+                RB6.IsChecked = false;
+                RB7.IsChecked = false;
+                RB8.IsChecked = false;
             }
             else if (RB9.IsChecked == true && RB10.IsChecked == true && RB11.IsChecked == true && RB12.IsChecked == true)
             {
@@ -140,6 +148,10 @@ namespace Vier_Gewinnt
                 G10.Background = System.Windows.Media.Brushes.Wheat;
                 G11.Background = System.Windows.Media.Brushes.Wheat;
                 G12.Background = System.Windows.Media.Brushes.Wheat;
+                RB9.IsChecked = false;
+                RB10.IsChecked = false;
+                RB11.IsChecked = false;
+                RB12.IsChecked = false;
             }
             else if (RB13.IsChecked == true && RB14.IsChecked == true && RB15.IsChecked == true && RB16.IsChecked == true)
             {
@@ -148,6 +160,10 @@ namespace Vier_Gewinnt
                 G14.Background = System.Windows.Media.Brushes.Wheat;
                 G15.Background = System.Windows.Media.Brushes.Wheat;
                 G16.Background = System.Windows.Media.Brushes.Wheat;
+                RB13.IsChecked = false;
+                RB14.IsChecked = false;
+                RB15.IsChecked = false;
+                RB16.IsChecked = false;
             }
             if (RB1.IsChecked == true && RB5.IsChecked == true && RB9.IsChecked == true && RB13.IsChecked == true)
             {
@@ -156,6 +172,10 @@ namespace Vier_Gewinnt
                 G5.Background = System.Windows.Media.Brushes.Wheat;
                 G9.Background = System.Windows.Media.Brushes.Wheat;
                 G13.Background = System.Windows.Media.Brushes.Wheat;
+                RB1.IsChecked = false;
+                RB5.IsChecked = false;
+                RB9.IsChecked = false;
+                RB13.IsChecked = false;
             }
             else if (RB2.IsChecked == true && RB6.IsChecked == true && RB10.IsChecked == true && RB14.IsChecked == true)
             {
@@ -164,6 +184,10 @@ namespace Vier_Gewinnt
                 G6.Background = System.Windows.Media.Brushes.Wheat;
                 G10.Background = System.Windows.Media.Brushes.Wheat;
                 G14.Background = System.Windows.Media.Brushes.Wheat;
+                RB2.IsChecked = false;
+                RB6.IsChecked = false;
+                RB10.IsChecked = false;
+                RB14.IsChecked = false;
 
             }
             if (RB33.IsChecked == true && RB7.IsChecked == true && RB11.IsChecked == true && RB15.IsChecked == true)
@@ -173,6 +197,10 @@ namespace Vier_Gewinnt
                 G7.Background = System.Windows.Media.Brushes.Wheat;
                 G11.Background = System.Windows.Media.Brushes.Wheat;
                 G15.Background = System.Windows.Media.Brushes.Wheat;
+                RB33.IsChecked = false;
+                RB7.IsChecked = false;
+                RB11.IsChecked = false;
+                RB15.IsChecked = false;
             }
             if (RB4.IsChecked == true && RB8.IsChecked == true && RB12.IsChecked == true && RB16.IsChecked == true)
             {
@@ -181,6 +209,10 @@ namespace Vier_Gewinnt
                 G8.Background = System.Windows.Media.Brushes.Wheat;
                 G12.Background = System.Windows.Media.Brushes.Wheat;
                 G16.Background = System.Windows.Media.Brushes.Wheat;
+                RB4.IsChecked = false;
+                RB8.IsChecked = false;
+                RB12.IsChecked = false;
+                RB16.IsChecked = false;
             }
         }
     }
