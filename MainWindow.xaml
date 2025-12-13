@@ -1,0 +1,71 @@
+﻿<Window x:Class="Vier_Gewinnt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vier_Gewinnt"
+        mc:Ignorable="d"
+        Title="Vier Gewinnt" Height="800" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="765*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="G1" BorderBrush="Black" BorderThickness="1" Margin="0,10,595,605" CornerRadius="1,1,1,1" Background="White" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <RadioButton x:Name="RB1" Content="RadioButton" Checked="RB1_Checked" Margin="-1,-1,1,1"/>
+
+        </Border>
+        <Border x:Name="G5" BorderBrush="Black" BorderThickness="1" Margin="0,165,595,431" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <RadioButton x:Name="RB5" Content="RadioButton" Checked="RB5_Checked"/>
+        </Border>
+        <Border x:Name="G9" BorderBrush="Black" BorderThickness="1" Margin="0,336,595,260" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <RadioButton x:Name="RB9" Content="RadioButton" Checked="RB9_Checked"/>
+        </Border>
+        <Border x:Name="G13" BorderBrush="Black" BorderThickness="1" Margin="0,510,595,86" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <RadioButton x:Name="RB13" Content="RadioButton" Background="White" Grid.RowSpan="2" Checked="RB13_Checked"/>
+        </Border>
+        <Border x:Name="G2" BorderBrush="Black" BorderThickness="1" Margin="160,10,400,605" CornerRadius="1,1,1,1" Grid.RowSpan="2" Grid.Column="2">
+            <RadioButton x:Name="RB2" Content="RadioButton" Background="White" Grid.RowSpan="2" Checked="RB2_Checked"/>
+        </Border>
+        <Border x:Name="G6" BorderBrush="Black" BorderThickness="1" Margin="160,165,400,431" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB6" Content="RadioButton" Checked="RB6_Checked"/>
+        </Border>
+        <Border x:Name="G10" BorderBrush="Black" BorderThickness="1" Margin="160,336,400,260" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB10" Content="RadioButton" Checked="RB10_Checked"/>
+        </Border>
+        <Border x:Name="G14" BorderBrush="Black" BorderThickness="1" Margin="160,510,400,86" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB14" Content="RadioButton" Checked="RB14_Checked"/>
+        </Border>
+        <Border x:Name="G3" BorderBrush="Black" BorderThickness="1" Margin="355,10,205,605" CornerRadius="1,1,1,1" Grid.RowSpan="2" Grid.Column="2">
+            <RadioButton x:Name="RB33" Content="RadioButton" Checked="RB33_Checked"/>
+        </Border>
+        <Border x:Name="G7" BorderBrush="Black" BorderThickness="1" Margin="355,165,205,431" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB7" Content="RadioButton" Checked="RB7_Checked"/>
+        </Border>
+        <Border x:Name="G11" BorderBrush="Black" BorderThickness="1" Margin="355,336,205,260" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB11" Content="RadioButton" Checked="RB11_Checked"/>
+        </Border>
+        <Border x:Name="G15" BorderBrush="Black" BorderThickness="1" Margin="355,510,205,86" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB15" Content="RadioButton" Checked="RB15_Checked"/>
+        </Border>
+        <Border x:Name="G4" BorderBrush="Black" BorderThickness="1" Margin="550,10,10,605" CornerRadius="1,1,1,1" Grid.RowSpan="2" Grid.Column="2">
+            <RadioButton x:Name="RB4" Content="RadioButton" Checked="RB4_Checked"/>
+        </Border>
+        <Border x:Name="G8" BorderBrush="Black" BorderThickness="1" Margin="550,165,10,431" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB8" Content="RadioButton" Checked="RB8_Checked"/>
+        </Border>
+        <Border x:Name="G12" BorderBrush="Black" BorderThickness="1" Margin="550,336,10,260" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB12" Content="RadioButton" Checked="RB12_Checked"/>
+        </Border>
+        <Border x:Name="G16" BorderBrush="Black" BorderThickness="1" Margin="550,510,10,86" CornerRadius="1,1,1,1" Grid.Row="1" Grid.Column="2">
+            <RadioButton x:Name="RB16" Content="RadioButton" Checked="RB16_Checked"/>
+        </Border>
+        <Button Content="Zug beenden" HorizontalAlignment="Left" Margin="315,700,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="70" Click="Button_Click" Grid.Column="2"/>
+
+    </Grid>
+</Window>
