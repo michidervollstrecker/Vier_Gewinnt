@@ -21,7 +21,7 @@ namespace Vier_Gewinnt
         }
         /// <summary>
         /// Clean up any res
-        public void checkcheck()
+        public void checkchecklin()
         {
             if (RB1.IsChecked == true && RB2.IsChecked == true && RB33.IsChecked == true && RB4.IsChecked == true)
             {
@@ -42,6 +42,10 @@ namespace Vier_Gewinnt
                 G6.Background = System.Windows.Media.Brushes.Wheat;
                 G7.Background = System.Windows.Media.Brushes.Wheat;
                 G8.Background = System.Windows.Media.Brushes.Wheat;
+                RB5.IsChecked = false;
+                RB6.IsChecked = false;
+                RB7.IsChecked = false;
+                RB8.IsChecked = false;
             }
             else if (RB9.IsChecked == true && RB10.IsChecked == true && RB11.IsChecked == true && RB12.IsChecked == true)
             {
@@ -50,6 +54,10 @@ namespace Vier_Gewinnt
                 G10.Background = System.Windows.Media.Brushes.Wheat;
                 G11.Background = System.Windows.Media.Brushes.Wheat;
                 G12.Background = System.Windows.Media.Brushes.Wheat;
+                RB9.IsChecked = false;
+                RB10.IsChecked = false;
+                RB11.IsChecked = false;
+                RB12.IsChecked = false;
             }
             else if (RB13.IsChecked == true && RB14.IsChecked == true && RB15.IsChecked == true && RB16.IsChecked == true)
             {
@@ -58,6 +66,59 @@ namespace Vier_Gewinnt
                 G14.Background = System.Windows.Media.Brushes.Wheat;
                 G15.Background = System.Windows.Media.Brushes.Wheat;
                 G16.Background = System.Windows.Media.Brushes.Wheat;
+                RB13.IsChecked = false;
+                RB14.IsChecked = false;
+                RB15.IsChecked = false;
+                RB16.IsChecked = false;
+            }
+            //Vertical
+            if (RB1.IsChecked == true && RB5.IsChecked == true && RB9.IsChecked == true && RB13.IsChecked == true)
+            {
+                MessageBox.Show("Vier gewinnt vertikal");
+                G1.Background = System.Windows.Media.Brushes.Maroon;
+                G5.Background = System.Windows.Media.Brushes.Maroon;
+                G9.Background = System.Windows.Media.Brushes.Maroon;
+                G13.Background = System.Windows.Media.Brushes.Maroon;
+                RB1.IsChecked = false;
+                RB5.IsChecked = false;
+                RB9.IsChecked = false;
+                RB13.IsChecked = false;
+            }
+            else if (RB2.IsChecked == true && RB6.IsChecked == true && RB10.IsChecked == true && RB14.IsChecked == true)
+            {
+                MessageBox.Show("Vier gewinnt vertikal");
+                G2.Background = System.Windows.Media.Brushes.Maroon;
+                G6.Background = System.Windows.Media.Brushes.Maroon;
+                G10.Background = System.Windows.Media.Brushes.Maroon;
+                G14.Background = System.Windows.Media.Brushes.Maroon;
+                RB2.IsChecked = false;
+                RB6.IsChecked = false;
+                RB10.IsChecked = false;
+                RB14.IsChecked = false;
+            }
+            else if (RB33.IsChecked == true && RB7.IsChecked == true && RB11.IsChecked == true && RB15.IsChecked == true)
+            {
+                MessageBox.Show("Vier gewinnt vertikal");
+                G3.Background = System.Windows.Media.Brushes.Maroon;
+                G7.Background = System.Windows.Media.Brushes.Maroon;
+                G11.Background = System.Windows.Media.Brushes.Maroon;
+                G15.Background = System.Windows.Media.Brushes.Maroon;
+                RB33.IsChecked = false;
+                RB7.IsChecked = false;
+                RB11.IsChecked = false;
+                RB15.IsChecked = false;
+            }
+            else if (RB4.IsChecked == true && RB8.IsChecked == true && RB12.IsChecked == true && RB16.IsChecked == true)
+            {
+                MessageBox.Show("Vier gewinnt vertikal");
+                G4.Background = System.Windows.Media.Brushes.Maroon;
+                G8.Background = System.Windows.Media.Brushes.Maroon;
+                G12.Background = System.Windows.Media.Brushes.Maroon;
+                G16.Background = System.Windows.Media.Brushes.Maroon;
+                RB4.IsChecked = false;
+                RB8.IsChecked = false;
+                RB12.IsChecked = false;
+                RB16.IsChecked = false;
             }
 
         }
@@ -68,7 +129,7 @@ namespace Vier_Gewinnt
             if (P1.IsChecked == true)
             {
                 G1.Background = System.Windows.Media.Brushes.Red;
-                P2.IsChecked = true;
+
             }
             else if (P2.IsChecked == true)
             {
@@ -171,6 +232,7 @@ namespace Vier_Gewinnt
         private void RB9_Checked(object sender, RoutedEventArgs e)
         {
             bool rb9 = true;
+            G9.Background = System.Windows.Media.Brushes.Red;
 
         }
 
@@ -267,7 +329,7 @@ namespace Vier_Gewinnt
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            checkcheck();
+            checkchecklin();
             if (RB1.IsChecked == true && RB2.IsChecked == true && RB33.IsChecked == true && RB4.IsChecked == true)
             {
 
@@ -291,7 +353,6 @@ namespace Vier_Gewinnt
             else if (RB2.IsChecked == true && RB6.IsChecked == true && RB10.IsChecked == true && RB14.IsChecked == true)
             {
                 MessageBox.Show("vier gewinnt");
-
 
             }
             if (RB33.IsChecked == true && RB7.IsChecked == true && RB11.IsChecked == true && RB15.IsChecked == true)
