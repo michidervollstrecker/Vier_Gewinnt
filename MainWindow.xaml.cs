@@ -14,6 +14,7 @@ namespace Vier_Gewinnt
             // Required for Windows Form Designer support
             //
             InitializeComponent();
+            P1.IsChecked = true;
             //
             // TODO: Add any constructor code after InitializeComponent call
             //
@@ -136,6 +137,14 @@ namespace Vier_Gewinnt
                 G1.Background = System.Windows.Media.Brushes.Green;
                 P1.IsChecked = true;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB6_Checked(object sender, RoutedEventArgs e)
@@ -148,6 +157,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G6.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -162,7 +179,16 @@ namespace Vier_Gewinnt
             {
                 G2.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
+
 
         private void RB33_Checked(object sender, RoutedEventArgs e)
         {
@@ -175,7 +201,16 @@ namespace Vier_Gewinnt
             {
                 G3.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
+
 
         private void RB4_Checked(object sender, RoutedEventArgs e)
         {
@@ -187,6 +222,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G4.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -201,6 +244,14 @@ namespace Vier_Gewinnt
             {
                 G5.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB7_Checked(object sender, RoutedEventArgs e)
@@ -213,6 +264,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G7.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -227,13 +286,36 @@ namespace Vier_Gewinnt
             {
                 G8.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB9_Checked(object sender, RoutedEventArgs e)
         {
             bool rb9 = true;
-            G9.Background = System.Windows.Media.Brushes.Red;
+            if (P1.IsChecked == true)
+            {
 
+                G9.Background = System.Windows.Media.Brushes.Red;
+            }
+            else if (P2.IsChecked == true)
+            {
+                G9.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB10_Checked(object sender, RoutedEventArgs e)
@@ -246,6 +328,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G10.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -260,6 +350,14 @@ namespace Vier_Gewinnt
             {
                 G11.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB12_Checked(object sender, RoutedEventArgs e)
@@ -272,6 +370,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G12.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -286,6 +392,14 @@ namespace Vier_Gewinnt
             {
                 G13.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB14_Checked(object sender, RoutedEventArgs e)
@@ -298,6 +412,14 @@ namespace Vier_Gewinnt
             else if (P2.IsChecked == true)
             {
                 G14.Background = System.Windows.Media.Brushes.Green;
+            }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
             }
         }
 
@@ -312,6 +434,14 @@ namespace Vier_Gewinnt
             {
                 G15.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void RB16_Checked(object sender, RoutedEventArgs e)
@@ -325,11 +455,20 @@ namespace Vier_Gewinnt
             {
                 G16.Background = System.Windows.Media.Brushes.Green;
             }
+            if (P1.IsChecked == true)
+            {
+                P2.IsChecked = true;
+            }
+            else if (P2.IsChecked == true)
+            {
+                P1.IsChecked = true;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             checkchecklin();
+
             if (RB1.IsChecked == true && RB2.IsChecked == true && RB33.IsChecked == true && RB4.IsChecked == true)
             {
 
