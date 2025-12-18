@@ -23,6 +23,8 @@ namespace Vier_Gewinnt
         }
         public bool[] barr1 = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
         public bool[] barr2 = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+        public bool[,,] mbarr2 = { { { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false } } };
+        public bool[,,] mbarr3 = { { { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true }, { false, true } } };
         public void next()
         {
             if (P1.IsChecked == true)
@@ -117,6 +119,8 @@ namespace Vier_Gewinnt
         }
         private void RB1_Checked(object sender, RoutedEventArgs e)
         {
+            RB1.Content = Convert.ToString(mbarr3[0, 0, 0]);
+            RB1.Content = Convert.ToString(mbarr2[0, 0, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[0] = true;
@@ -132,6 +136,7 @@ namespace Vier_Gewinnt
         }
         private void RB6_Checked(object sender, RoutedEventArgs e)
         {
+            RB6.Content = Convert.ToString(mbarr3[0, 5, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[5] = true;
@@ -147,7 +152,7 @@ namespace Vier_Gewinnt
         }
         private void RB2_Checked(object sender, RoutedEventArgs e)
         {
-
+            RB2.Content = Convert.ToString(mbarr3[0, 1, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[1] = true;
@@ -163,6 +168,7 @@ namespace Vier_Gewinnt
         }
         private void RB33_Checked(object sender, RoutedEventArgs e)
         {
+            RB33.Content = Convert.ToString(mbarr3[0, 2, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[2] = true;
@@ -178,6 +184,7 @@ namespace Vier_Gewinnt
         }
         private void RB4_Checked(object sender, RoutedEventArgs e)
         {
+            RB4.Content = Convert.ToString(mbarr3[0, 3, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[3] = true;
@@ -193,6 +200,7 @@ namespace Vier_Gewinnt
         }
         private void RB5_Checked(object sender, RoutedEventArgs e)
         {
+            RB5.Content = Convert.ToString(mbarr3[0, 4, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[4] = true;
@@ -209,6 +217,7 @@ namespace Vier_Gewinnt
 
         private void RB7_Checked(object sender, RoutedEventArgs e)
         {
+            RB7.Content = Convert.ToString(mbarr3[0, 6, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[6] = true;
@@ -224,6 +233,7 @@ namespace Vier_Gewinnt
         }
         private void RB8_Checked(object sender, RoutedEventArgs e)
         {
+            RB8.Content = Convert.ToString(mbarr3[0, 7, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[7] = true;
@@ -240,6 +250,7 @@ namespace Vier_Gewinnt
 
         private void RB9_Checked(object sender, RoutedEventArgs e)
         {
+            RB9.Content = Convert.ToString(mbarr3[0, 8, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[8] = true;
@@ -257,6 +268,7 @@ namespace Vier_Gewinnt
 
         private void RB10_Checked(object sender, RoutedEventArgs e)
         {
+            RB10.Content = Convert.ToString(mbarr3[0, 9, 0]);
             barr1[9] = true;
             bool rb10 = true;
             if (P1.IsChecked == true)
@@ -274,6 +286,7 @@ namespace Vier_Gewinnt
         }
         private void RB11_Checked(object sender, RoutedEventArgs e)
         {
+            RB11.Content = Convert.ToString(mbarr3[0, 10, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[10] = true;
@@ -290,6 +303,7 @@ namespace Vier_Gewinnt
 
         private void RB12_Checked(object sender, RoutedEventArgs e)
         {
+            RB12.Content = Convert.ToString(mbarr3[0, 11, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[11] = true;
@@ -305,6 +319,7 @@ namespace Vier_Gewinnt
         }
         private void RB13_Checked(object sender, RoutedEventArgs e)
         {
+            RB13.Content = Convert.ToString(mbarr3[0, 12, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[12] = true;
@@ -321,6 +336,7 @@ namespace Vier_Gewinnt
 
         private void RB14_Checked(object sender, RoutedEventArgs e)
         {
+            RB14.Content = Convert.ToString(mbarr3[0, 13, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[13] = true;
@@ -336,6 +352,7 @@ namespace Vier_Gewinnt
         }
         private void RB15_Checked(object sender, RoutedEventArgs e)
         {
+            RB15.Content = Convert.ToString(mbarr3[0, 14, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[14] = true;
@@ -351,6 +368,7 @@ namespace Vier_Gewinnt
         }
         private void RB16_Checked(object sender, RoutedEventArgs e)
         {
+            RB16.Content = Convert.ToString(mbarr3[0, 15, 0]);
             if (P1.IsChecked == true)
             {
                 barr1[15] = true;
