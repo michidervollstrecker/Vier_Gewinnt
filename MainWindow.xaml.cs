@@ -46,14 +46,13 @@ namespace Vier_Gewinnt
             {
                 MessageBox.Show("Vier gewinnt Player two zweite Reihe horizontal");
             }
-
             if (mbarr3[0, 4, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 7, 0] == true)
             {
                 MessageBox.Show("Vier gewinnt Player one zweite Reihe horizontal");
             }
             else if (mbarr3[0, 4, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 6, 1] == true && mbarr3[0, 7, 1] == true)
             {
-                MessageBox.Show("Vier gewinnt Player twoz weite Reihe horizontal");
+                MessageBox.Show("Vier gewinnt Player two weite Reihe horizontal");
             }
             if (mbarr3[0, 8, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 11, 0] == true)
             {
@@ -71,23 +70,23 @@ namespace Vier_Gewinnt
             {
                 MessageBox.Show("Vier gewinnt erste Reihe vertikal Player one");
             }
-            else if ((mbarr3[0, 0, 1] == true && mbarr3[0, 4, 1] == true && mbarr3[0, 8, 1] == true && mbarr3[0, 12, 1] == true))
+            else if ((mbarr3[0, 0, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 15, 0] == true))
             {
-                MessageBox.Show("Vier gewinnt erste Reihe vertikal Player two");
+                MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player two");
             }
-            if (mbarr3[0, 0, 0] == true && mbarr3[0, 4, 0] == true && mbarr3[0, 8, 0] == true && mbarr3[0, 12, 0] == true)
+            if (mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true)
             {
-                MessageBox.Show("Vier gewinnt zweite Reihe vertikal green Player one");
+                MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player one");
             }
             if (mbarr3[0, 1, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 9, 1] == true && mbarr3[0, 13, 1] == true)
             {
-                MessageBox.Show("Vier gewinnt dritte Reihe vertikal Player two");
+                MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player two");
             }
             if (mbarr3[0, 2, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 14, 0] == true)
             {
                 MessageBox.Show("Vier gewinnt dritte Reihe vertikal Player one");
             }
-            else if (mbarr3[0, 2, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 14, 0] == true)
+            else if (mbarr3[0, 2, 1] == true && mbarr3[0, 6, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 14, 1] == true)
             {
                 MessageBox.Show("Vier gewinnt dritte Reihe vertikal Player two");
             }
