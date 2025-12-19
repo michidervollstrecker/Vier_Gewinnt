@@ -10,20 +10,9 @@ namespace Vier_Gewinnt
     {
         public MainWindow()
         {
-            //
-            // Required for Windows Form Designer support
-            //
             InitializeComponent();
             P1.IsChecked = true;
-
-            //
-            // TODO: Add any constructor code after InitializeComponent call
-            //
-
         }
-        // public bool[] barr1 = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
-        //public bool[] barr2 = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
-        //public bool[,,] mbarr2 = { { { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false }, { false } } };
         public bool[,,] mbarr3 = { { { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false }, { false, false } } };
         public void next()
         {
@@ -62,7 +51,7 @@ namespace Vier_Gewinnt
             {
                 MessageBox.Show("Vier gewinnt zweite Reihe horizontalPlayer two");
             }
-            if (mbarr3[0, 13, 0] == true && mbarr3[0, 14, 0] == true && mbarr3[0, 15, 0] == true && mbarr3[0, 16, 0] == true)
+            if (mbarr3[0, 12, 0] == true && mbarr3[0, 13, 0] == true && mbarr3[0, 14, 0] == true && mbarr3[0, 15, 0] == true)
             {
                 MessageBox.Show("Vier gewinnt vierte Reihe horizontal Player one");
             }
@@ -70,11 +59,11 @@ namespace Vier_Gewinnt
             {
                 MessageBox.Show("Vier gewinnt erste Reihe vertikal Player one");
             }
-            else if ((mbarr3[0, 0, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 15, 0] == true))
+            else if ((mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true))
             {
-                MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player two");
+                MessageBox.Show("Vier gewinnt erste Reihe vertikal Player two");
             }
-            if (mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true)
+            if (mbarr3[0, 1, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 13, 0] == true)
             {
                 MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player one");
             }
@@ -82,9 +71,9 @@ namespace Vier_Gewinnt
             {
                 MessageBox.Show("Vier gewinnt zweite Reihe vertikal Player two");
             }
-            if (mbarr3[0, 2, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 14, 0] == true)
+            if (mbarr3[0, 1, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 13, 0] == true)
             {
-                MessageBox.Show("Vier gewinnt dritte Reihe vertikal Player one");
+                MessageBox.Show("Vier gewinnt  vertikal Player one");
             }
             else if (mbarr3[0, 2, 1] == true && mbarr3[0, 6, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 14, 1] == true)
             {
@@ -92,28 +81,28 @@ namespace Vier_Gewinnt
             }
             if (mbarr3[0, 2, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 14, 0] == true)
             {
-                MessageBox.Show("Vier gewinnt one Diagonal");
+                MessageBox.Show("Vier gewinnt Player one Diagonal");
             }
             else if (mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true)
             {
-                MessageBox.Show("Vier gewinnt two diagonal");
+                MessageBox.Show("Vier gewinnt Player two diagonal");
             }
-            if (mbarr3[0, 3, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 12, 0] == true)
+            if (mbarr3[0, 0, 0] == true && mbarr3[0, 5, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 15, 0] == true)
             {
-                MessageBox.Show("Vier gewinnt one diagonal");
+                MessageBox.Show("Vier gewinnt Player one diagonal");
             }
-            else if (mbarr3[0, 3, 1] == true && mbarr3[0, 6, 1] == true && mbarr3[0, 9, 1] == true && mbarr3[0, 12, 1] == true)
+            else if (mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true)
             {
-                MessageBox.Show("Vier gewinnt Green diagonal");
+                MessageBox.Show("Vier gewinnt Player two diagonal");
             }
             if (mbarr3[0, 0, 0] == true && mbarr3[0, 4, 0] == true && mbarr3[0, 8, 0] == true && mbarr3[0, 12, 0] == true)
             {
                 MessageBox.Show("Vier gewinnt Player one erste Reihe vertikal");
             }
-            else if (mbarr3[0, 0, 0] == true && mbarr3[0, 4, 1] == true && mbarr3[0, 8, 1] == true && mbarr3[0, 12, 1] == true)
+            else if (mbarr3[0, 0, 1] == true && mbarr3[0, 4, 1] == true && mbarr3[0, 8, 1] == true && mbarr3[0, 12, 1] == true)
             {
                 MessageBox.Show("Vier gewinnt Player two erste Reihe vertikal");
-            }//
+            }
             {
                 if (mbarr3[0, 0, 0] == true && mbarr3[0, 1, 0] == true && mbarr3[0, 2, 0] == true && mbarr3[0, 3, 0] == true)
                 {
@@ -132,15 +121,15 @@ namespace Vier_Gewinnt
                 {
                     MessageBox.Show("Vier gewinnt zweite Reihe horizontal Player two");
                 }
-                if (mbarr3[0, 9, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 11, 0] == true && mbarr3[0, 12, 0] == true)
+                if (mbarr3[0, 8, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 10, 0] == true && mbarr3[0, 11, 0] == true)
                 {
                     MessageBox.Show("Vier gewinnt dritte Reihe horizontal Player one");
                 }
-                else if (mbarr3[0, 9, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 11, 1] == true && mbarr3[0, 12, 1] == true)
+                if (mbarr3[0, 9, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 11, 1] == true && mbarr3[0, 12, 1] == true)
                 {
                     MessageBox.Show("Vier gewinnt dritte Reihe horizontalPlayer two");
                 }
-                if (mbarr3[0, 13, 0] == true && mbarr3[0, 14, 0] == true && mbarr3[0, 15, 0] == true && mbarr3[0, 16, 0] == true)
+                if (mbarr3[0, 12, 0] == true && mbarr3[0, 13, 0] == true && mbarr3[0, 14, 0] == true && mbarr3[0, 15, 0] == true)
                 {
                     MessageBox.Show("Vier gewinnt vierte Reihe horizontal Player one");
                 }
@@ -174,21 +163,21 @@ namespace Vier_Gewinnt
                 }
                 else if (mbarr3[0, 0, 1] == true && mbarr3[0, 5, 1] == true && mbarr3[0, 10, 1] == true && mbarr3[0, 15, 1] == true)
                 {
-                    MessageBox.Show("Vier gewinnt two diagonal");
+                    MessageBox.Show("Vier gewinnt Player two diagonal");
                 }
                 if (mbarr3[0, 3, 0] == true && mbarr3[0, 6, 0] == true && mbarr3[0, 9, 0] == true && mbarr3[0, 12, 0] == true)
                 {
-                    MessageBox.Show("Vier gewinnt one diagonal");
+                    MessageBox.Show("Vier gewinnt Player one diagonal");
                 }
                 else if (mbarr3[0, 3, 1] == true && mbarr3[0, 6, 1] == true && mbarr3[0, 9, 1] == true && mbarr3[0, 12, 1] == true)
                 {
-                    MessageBox.Show("Vier gewinnt Green diagonal");
+                    MessageBox.Show("Vier gewinnt Player two diagonal");
                 }
                 if (mbarr3[0, 0, 0] == true && mbarr3[0, 4, 0] == true && mbarr3[0, 8, 0] == true && mbarr3[0, 12, 0] == true)
                 {
                     MessageBox.Show("Vier gewinnt Player one erste Reihe vertikal");
                 }
-                else if (mbarr3[0, 0, 0] == true && mbarr3[0, 4, 1] == true && mbarr3[0, 8, 1] == true && mbarr3[0, 12, 1] == true)
+                else if (mbarr3[0, 0, 1] == true && mbarr3[0, 4, 1] == true && mbarr3[0, 8, 1] == true && mbarr3[0, 12, 1] == true)
                 {
                     MessageBox.Show("Vier gewinnt Player two erste Reihe vertikal");
                 }
@@ -366,7 +355,7 @@ namespace Vier_Gewinnt
             RB11.Content = Convert.ToString(mbarr3[0, 10, 0]);
             if (P1.IsChecked == true)
             {
-                mbarr3[0, 11, 0] = true;
+                mbarr3[0, 10, 0] = true;
                 G11.Background = System.Windows.Media.Brushes.Red;
             }
             else if (P2.IsChecked == true)
@@ -462,7 +451,46 @@ namespace Vier_Gewinnt
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Convert.ToString(mbarr3[0, 0, 0]));
+
+            for (short i = 0; i <= 15; i++)
+            {
+                mbarr3[0, i, 0] = false;
+                mbarr3[0, i, 1] = false;
+            }
+
+
+            RB1.IsChecked = false;
+            RB2.IsChecked = false;
+            RB33.IsChecked = false;
+            RB4.IsChecked = false;
+            RB5.IsChecked = false;
+            RB6.IsChecked = false;
+            RB7.IsChecked = false;
+            RB8.IsChecked = false;
+            RB9.IsChecked = false;
+            RB10.IsChecked = false;
+            RB11.IsChecked = false;
+            RB12.IsChecked = false;
+            RB13.IsChecked = false;
+            RB14.IsChecked = false;
+            RB15.IsChecked = false;
+            RB16.IsChecked = false;
+            G1.Background = System.Windows.Media.Brushes.White;
+            G2.Background = System.Windows.Media.Brushes.White;
+            G3.Background = System.Windows.Media.Brushes.White;
+            G4.Background = System.Windows.Media.Brushes.White;
+            G5.Background = System.Windows.Media.Brushes.White;
+            G6.Background = System.Windows.Media.Brushes.White;
+            G7.Background = System.Windows.Media.Brushes.White;
+            G8.Background = System.Windows.Media.Brushes.White;
+            G9.Background = System.Windows.Media.Brushes.White;
+            G10.Background = System.Windows.Media.Brushes.White;
+            G11.Background = System.Windows.Media.Brushes.White;
+            G12.Background = System.Windows.Media.Brushes.White;
+            G13.Background = System.Windows.Media.Brushes.White;
+            G14.Background = System.Windows.Media.Brushes.White;
+            G15.Background = System.Windows.Media.Brushes.White;
+            G16.Background = System.Windows.Media.Brushes.White;
 
         }
 
@@ -477,3 +505,6 @@ namespace Vier_Gewinnt
         }
     }
 }
+
+
+//Player one ist 0 Player 2 ist 1
